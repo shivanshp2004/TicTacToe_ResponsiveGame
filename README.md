@@ -1,2 +1,3 @@
-# TicTacToe_ResponsiveGame
-This is 2- Player Tic-Tac-Toe Game, It is completely responsive.
+This is a Responsive Project of "Tic-Tac-Toe" Game. In this, HTML,CSS and JavaScript are used. This is a 2- Player Game.
+
+Complete Code by - Shivansh Pathak
