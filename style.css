@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+
+}
+.nav {
+  height: 60px;
+  width: 100%;
+  background-color: rgb(19, 3, 19);
+  color: white;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  padding-left: 20px;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+.nav span {
+  cursor: pointer;
+}
+.game-container {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  margin: 70px 0;
+  padding: 0 20px;
+  align-items: center;
+  /* background :red; */
+  /* justify-content: space-evenly; */
+  flex-wrap: wrap;
+  
+}
+.container {
+  width: 500px;
+  height: 500px;
+  background: white;
+  display: grid;
+  grid-template-columns: 10vw 10vw 10vw;
+  grid-template-rows: 10vw 10vw 10vw;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.square:hover {
+  background: rgb(247, 234, 247);
+}
+.bt {
+  border-top: 0;
+}
+.bb {
+  border-bottom: 0;
+}
+.bl {
+  border-left: 0;
+}
+.br {
+  border-right: 0;
+}
+.turndisplay {
+  font-size: 2rem;
+  align-self: self-start;
+  /* margin-right: 400px; */
+  /* background:rgb(229, 204, 232); */
+  width: auto;
+  position: relative;
+  left : 300px;
+  height: 70px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  padding :30px;
+}
+.reset {
+  width: 150px;
+  height: 50px;
+  font-size: 2rem;
+  border-radius: 15px;
+  position: absolute;
+  left:1300px;
+  top : 650px;
+  align-self: last baseline;
+  
+  background: rgb(8, 8, 8);
+  color: white;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  cursor: pointer;
+}
+.reset:hover {
+  background: rgb(66, 63, 63);
+  transform: scale(1.15);
+  color: white;
+  cursor: pointer;
+}
+.value {
+  color: black;
+  font-size: 8rem;
+}
+.won {
+  width:auto;
+  height: 100px;
+  align-self: center;
+  justify-content: center;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position : relative;
+  left: 15%;
+  padding : 3%;
+}
+.music{
+    width :auto;
+    color:black;
+    display:flex;
+    order:3;
+    cursor:pointer;
+}
+
+.fa-music{
+  //min-width: 1000px;
+  font-size:3rem;
+  position:absolute;
+  top: 80px;
+  right: 30px;
+  border-radius :50%;
+  border: 2px solid black;
+  padding: 15px;
+  display: flex;;
+  justify-content: center;
+  align-items: center;
+  background: rgb(181, 179, 179);;
+}
+.diagonal-strike {
+  position: absolute;
+  width: 82px;
+  height: 2px;
+  background-color: red; /* Adjust the color as needed */
+  transform: rotate(-45deg);
+  transform-origin: center;
+  top:120px;
+  order:2;
+  right:30px;
+}
+
+@media (max-width:1000px)
+{
+  .fa-music {
+    font-size:1rem;
+    }
+  .value{
+    font-size:2rem;
+  }
+  .diagonal-strike{
+    width:50px;
+    position:absolute;
+    top:105px;
+  }
+  .turndisplay{
+    position:absolute;
+    left:25%;
+    top:45%;
+  }
+  .won{
+    position:absolute;
+    left: 20%;
+    width:auto;
+    font-size:3rem;
+  }
+  .reset{
+    width:auto;
+    position: absolute;
+    left:70%;
+   top:90%;
+   margin-bottom: 0px;
+    font-size:1.5rem;
+    padding:15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+}
